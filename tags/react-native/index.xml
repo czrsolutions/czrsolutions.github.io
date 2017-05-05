@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CZR Solutions</title>
-    <link>//czrsolutions.github.io/index.xml</link>
-    <description>Recent content on CZR Solutions</description>
+    <title>React Native on CZR Solutions</title>
+    <link>//czrsolutions.github.io/tags/react-native/index.xml</link>
+    <description>Recent content in React Native on CZR Solutions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Wed, 03 May 2017 13:47:08 +0200</lastBuildDate>
-    <atom:link href="//czrsolutions.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//czrsolutions.github.io/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A experiência de construir um app usando React Native</title>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projeto, validação, arquitetura e desenvolvimento de sistemas">
+  <meta name="author" content="CZR Solutions">
+  <meta name="generator" content="Hugo 0.18.1" />
+  <title>A experiência de construir um app usando React Native &middot; CZR Solutions</title>
+  <!-- Stylesheets -->
+  <link href="//czrsolutions.github.io/css/bootstrap-v3.3.7/bootstrap.min.css" rel="stylesheet">
+  <link href="//czrsolutions.github.io/css/agency.css" rel="stylesheet">
+  <link href="//czrsolutions.github.io/css/jquery.form-validator-v2.3.44/theme-default.min.css" rel="stylesheet">
+
+  
+
+  <!-- Custom Fonts -->
+  <link href="//czrsolutions.github.io/font-awesome-v4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+  
+
+  
+    <link rel="shortcut icon" type="image/x-icon" href="//czrsolutions.github.io/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="//czrsolutions.github.io/favicon.ico">
+  
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-shrink" data-spy="affix" data-offset-top="200">
+  <div class="navbar-blog navbar-blog-default yamm" role="navigation" id="navbar-blog">
+    <div class="container">
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand page-scroll" href="//czrsolutions.github.io/">
+          
+          <img src="//czrsolutions.github.io/img/logo.svg" class="img-responsive" alt="CZR Solutions">
+        </a>
+      
+
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="//czrsolutions.github.io/"></a>
+        </li>
+
+        
+
+        
+          <li>
+            <a class="page-scroll" href="//czrsolutions.github.io/#sobreNos">Sobre a CZR</a>
+          </li>
+        
+
+        
+          <li>
+            <a class="page-scroll" href="//czrsolutions.github.io/#services">Nossos Serviços</a>
+          </li>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+          <li>
+            <a class="page-scroll" href="//czrsolutions.github.io/#contact">Entre em Contato</a>
+          </li>
+        
+
+        
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>A experiência de construir um app usando React Native</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">Cibele Reis</a> | 03/05/2017</p>
+
+                        <div id="post-content">
+                          
+
+<p>O React Native é um projeto que foi desenvolvido pelos engenheiros do Facebook e
+tem como lema &ldquo;learn once, write anywhere&rdquo;, ou seja, é uma ferramenta que permite
+o desenvolvimento de aplicativos nativos (Android e iOS) utilizando uma só linguagem.</p>
+
+<p>Diferente dos frameworks para construir aplicativos híbridos (ex. Cordova), o React
+Native, apesar de permitir o reuso do mesmo codebase para plataformas diferentes, não
+se propõe ao &ldquo;write once, run everywhere&rdquo; pois cada plataforma possui características
+que devem ser respeitadas.</p>
+
+<h2 id="as-vantagens-do-react-native">As vantagens do React Native</h2>
+
+<p><strong>1. É Nativo</strong></p>
+
+<p>O React Native roda em uma thread JavaScript que se comunica com componentes nativos
+ em tempo de execução, portanto os aplicativos desenvolvidos com esse framework
+ apresentam uma excelente performance no Android e iOS e passam a sensação de nativos.</p>
+
+<p><strong>2. Desenvolvimento Eficiente</strong></p>
+
+<p>As alterações que você realizar no código serão visualizadas imediatamente. Isso significa
+que não haverá mais espera até que seu código compile e seu aplicativo reinicie após cada
+mudança que você realize!</p>
+
+<p><strong>3. Fácil de Aprender</strong></p>
+
+<p>Se você já é familiarizado(a) com JavaScript, a curva de aprendizado será muito menor.
+Além disso, a documentação na internet é vasta e muito provavelmente você encontrará as
+soluções para os problemas que vier a enfrentar.</p>
+
+<p><strong>4. Comunidade Ativa</strong></p>
+
+<p>Como grande parte do código do seu aplicativo em React Native será em JavaScript, você
+poderá desfrutar de diversos tutoriais, documentações e exemplos disponibilizados pela comunidade.</p>
+
+<h2 id="a-minha-experiência-com-react-native">A minha experiência com React Native</h2>
+
+<p>Até eu começar a usar o React Native, ainda não havia tido a oportunidade de fazer um aplicativo.
+Além disso, meu background era de backend Web e eu não possuia muita experiência com JavaScript ou
+qualquer um de seus frameworks. Sendo assim, não vou comparar o React Native com outras tecnologias, mas
+vou passar as impressões que ficaram.</p>
+
+<p>Primeiramente, o React Native, assim como o React, possui uma maneira particular de trabalhar com o estado
+da aplicação e eu levei algum tempo para me adaptar a isso. O framework trabalha com componentes
+declarativos, ou seja, com a definição de como uma tela deve parecer dado um determinado estado.
+O controle dos estados é realizado através dos tipos de dado &ldquo;state&rdquo; e &ldquo;props&rdquo; e o próprio React Native
+verifica as alterações desses tipos de dados e rerenderiza os componentes de maneira muito eficiente.</p>
+
+<p>O &ldquo;state&rdquo; armazena os dados que se alteram durante o lifetime de um componente, já o &ldquo;props&rdquo; tem seu valor
+ atribuido pelo componente pai e não muda durante o lifetime. Sendo assim, o &ldquo;state&rdquo;
+  deve ser inicializado no construtor e sempre que for alterá-lo,
+você deve utilizar o &ldquo;setState&rdquo;.</p>
+
+<p>Por exemplo:</p>
+
+<pre><code>import React, { Component } from 'react';
+import { AppRegistry, Text, View } from 'react-native';
+
+//Componente que pisca
+class TextoQuePisca extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {mostraTexto: true};
+
+    // Alterna &quot;mostraTexto&quot; a cada segundo
+    setInterval(() =&gt; {
+      this.setState({ mostraTexto: !this.state.mostraTexto });
+    }, 1000);
+  }
+
+  render() {
+    let display = this.state.mostraTexto ? this.props.texto : ' ';
+    return (
+      &lt;Text&gt;{display}&lt;/Text&gt;
+    );
+  }
+}
+
+class MeuApp extends Component {
+  render() {
+    return (
+      &lt;View&gt;
+        &lt;TextoQuePisca texto='Esse texto pisca' /&gt;
+        &lt;TextoQuePisca texto='e esse também' /&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+
+AppRegistry.registerComponent('MeuApp', () =&gt; MeuApp);
+</code></pre>
+
+<p>Note que toda vez que o &ldquo;setState&rdquo; for chamado e houver alterações no estado, o componente é renderizado novamente.
+Você jamais utilizará o &ldquo;setState&rdquo; dentro da função de renderização de um componente.
+Em uma aplicação de verdade, por exemplo, ele será chamado cada vez que um dado novo chegar ou com inputs de usuário.</p>
+
+<p>Uma opção que fiz, e é conhecida como boa prática, foi utilizar funções no lugar de classes sempre que não era necessário
+controlar o estado do componente (prática conhecida por &ldquo;stateless functional component&rdquo;). Isso tornou o app mais modular e fácil de ser testado.
+Um exemplo dessa prática seria:</p>
+
+<pre><code>import React, { Component } from 'react';
+import { AppRegistry, Text, View } from 'react-native';
+
+//Componente funcional
+const Exemplo = props =&gt; {
+  return(
+    &lt;Text&gt;
+        {props.texto}
+    &lt;/Text&gt;
+  )
+}
+
+class MeuApp extends Component {
+  render() {
+    return (
+      &lt;View&gt;
+        &lt;Exemplo texto = 'Exemplo de componente funcional.'/&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+
+AppRegistry.registerComponent('MeuApp', () =&gt; MeuApp);
+</code></pre>
+
+<p>A aplicação que desenvolvi utilizando React Native possuia 5 telas simples, portanto não exigia a utilização de
+bibliotecas como Redux para o gerenciamento do estado. Além disso, como já estava aprendendo uma nova tecnologia,
+tive receio de gerar um overhead incluindo o Redux.</p>
+
+<p>Tendo o conceito do estado bem entendido, o restante do desenvolvimento foi mais tranquilo. Consegui terminar o
+aplicativo e colocá-lo na playstore em uma semana e acredito que isso tenha sido impulsionado pelo &ldquo;Hot Reloading&rdquo; que a ferramenta oferece.</p>
+
+<p>Desenhar as telas e testar o que estava sendo desenvolvido foi muito eficiente, pois basta salvar as alterações
+do código que o aplicativo é instantaneamente recarregado. Além disso, por ter uma comunidade muito ativa, não
+foi um problema encontrar documentações ou bibliotecas para tudo que precisei.</p>
+
+<p>Como dito anteriormente, o aplicativo foi desenvolvido apenas para Android, entretanto caso seja
+necessário distribuí-lo também para o iOS, não será um problema, visto que  mais de 80% do código
+pode ser utilizado para as duas plataformas.</p>
+
+<p>E então, o que ficou? Como não tenho como comparar o React Native com outros frameworks, a sensação que
+fica é a de que ele é uma ferramenta muito potente que veio para melhorar a experiência do desenvolvedor
+e também do usuário final. O framework respeita o ecossistema nativo de cada plataforma, mas sem perder a
+possibilidade de escrever trechos de código que funcionem para todas, e isso é sensacional para o gerenciamento
+do projeto visto que não é necessário manter mais de uma equipe para a entrega de aplicativos que pareçam nativos
+em mais de uma plataforma.</p>
+
+                        </div>
+                        
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'Comentarios';
+    var disqus_identifier = '\/\/czrsolutions.github.io\/blog\/2017\/05\/03\/fazendo-app-cljs';
+    var disqus_title = 'A experiência de construir um app usando React Native';
+    var disqus_url = '\/\/czrsolutions.github.io\/blog\/2017\/05\/03\/fazendo-app-cljs';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel-widgets panel-widgets-default sidebar-menu">
+
+    <div class="panel-widgets-heading">
+      <h3 class="panel-widgets-title">Busca</h3>
+    </div>
+
+    <div class="panel-widgets-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" results="0" class="form-control" placeholder="Busca">
+                <input type="hidden" name="q" value="site://czrsolutions.github.io/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel-widgets panel-widgets-default sidebar-menu">
+
+    <div class="panel-widgets-heading">
+      <h3 class="panel-widgets-title">Categorias</h3>
+    </div>
+
+    <div class="panel-widgets-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="//czrsolutions.github.io/categories/programming">programming (1)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel-widgets sidebar-menu">
+    <div class="panel-widgets-heading">
+      <h3 class="panel-widgets-title">Tags</h3>
+    </div>
+
+    <div class="panel-widgets-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="//czrsolutions.github.io/tags/react-native"><i class="fa fa-tags"></i> react-native</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+          <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Comentarios';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            </div>
+            
+
+
+        </div>
+        
+
+        <!-- Footer section -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">&copy; CZR Solutions 2017</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+
+          
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+
+          
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-89954522-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+
+<script src="//czrsolutions.github.io/js/front.js"></script>
+
+
+<script src="//czrsolutions.github.io/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>
