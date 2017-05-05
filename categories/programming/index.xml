@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on CZR Solutions</title>
-    <link>http://czrsolutions.github.io/categories/programming/index.xml</link>
+    <link>//czrsolutions.github.io/categories/programming/index.xml</link>
     <description>Recent content in Programming on CZR Solutions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <atom:link href="http://czrsolutions.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//czrsolutions.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A experiência de construir um app usando React Native</title>
-      <link>http://czrsolutions.github.io/blog/2017/05/03/experiencia-com-app-react-native</link>
+      <link>//czrsolutions.github.io/blog/2017/05/03/experiencia-com-app-react-native</link>
       <pubDate>Wed, 03 May 2017 13:47:08 +0200</pubDate>
       
-      <guid>http://czrsolutions.github.io/blog/2017/05/03/experiencia-com-app-react-native</guid>
+      <guid>//czrsolutions.github.io/blog/2017/05/03/experiencia-com-app-react-native</guid>
       <description>
 
 &lt;p&gt;O React Native é um projeto que foi desenvolvido pelos engenheiros do Facebook e
